@@ -1,0 +1,1003 @@
+schema = 1
+source = "polymath-skills-dev"
+source_version = "0.45.0"
+source_commit = "e078159"
+installed_at = "2026-10-06T04:14:51Z"
+scope = "repo"
+ide = "both"
+track = "tool"
+addons = "superprompt,prompt-uplift,python-stack,browser-qa,playwright-cli,web-frontend-bootstrap,independent-audit,remediate-audit,agentic-debugging,web-search,retrieve-evidence"
+
+[skills]
+cli-package-design = { version = 2 }
+repo-memory = { version = 3 }
+superprompt = { version = 1 }
+frontier-prompt-uplift = { version = 1 }
+python-cli-app = { version = 2 }
+python-style-guide = { version = 5 }
+python-test-harness = { version = 1 }
+playwright-browser-qa = { version = 4 }
+playwright = { version = 2 }
+web-frontend-bootstrap = { version = 1 }
+independent-audit = { version = 10 }
+agent-cli-tools = { version = 4 }
+remediate-audit = { version = 7 }
+agentic-debugging = { version = 1 }
+project-web-search = { version = 3 }
+retrieve-source-evidence = { version = 3 }
+
+[[files]]
+path = ".agents/skills/cli-package-design/SKILL.md"
+sha256 = "dca306c45bfd25e5a8e772d4deba9d152df48735a3dc3b35cc9535ea4799ddef"
+[[files]]
+path = ".agents/skills/cli-package-design/assets/templates/cli-contract-v1.md"
+sha256 = "5c5c69b51fe877535c5f2f48703df6cb0802490f15aa60d00f0f58cfd6afa8d5"
+[[files]]
+path = ".agents/skills/cli-package-design/assets/templates/command-manifest.schema.json"
+sha256 = "135685af45ec79e65972797b8868cea1a09d6d09be7142d15257536e3a3b6995"
+[[files]]
+path = ".agents/skills/cli-package-design/assets/templates/exit-code-map-v1.csv"
+sha256 = "f443fe986488cbe33ee26801877272ec69091940bb3aad810c9ec663a9e79817"
+[[files]]
+path = ".agents/skills/cli-package-design/assets/templates/release-evidence-checklist-v1.md"
+sha256 = "4a92b1f38b258ee773d5c27aeeb3ecd44650a4388caff6fa64258bd9b37f22fc"
+[[files]]
+path = ".agents/skills/cli-package-design/references/command-output-error-contracts.md"
+sha256 = "21c3c5f962df8806de5c25c1ca6b3cecdb3e1cfde60410c0b82393922f3caccc"
+[[files]]
+path = ".agents/skills/cli-package-design/references/documentation-and-drift-controls.md"
+sha256 = "509e918f968898adddde6ed0f39caef4451f143f8f5a8354538f469f5963322d"
+[[files]]
+path = ".agents/skills/cli-package-design/references/human-and-agent-interface.md"
+sha256 = "c61ed8b80e1de51327a549e74a1c87fe3d6c24cda2811324ef86757342c8bdb6"
+[[files]]
+path = ".agents/skills/cli-package-design/references/interaction-mutation-and-auth.md"
+sha256 = "b8c9a2713f5dd6840231926d02bd1069c361c76a1cadb6d59e8848e4cbe510b1"
+[[files]]
+path = ".agents/skills/cli-package-design/references/packaging-and-distribution.md"
+sha256 = "e275a4e8b6260b61ceda47cc5b46b578cd84f7017227e9f93a74dc105497e777"
+[[files]]
+path = ".agents/skills/cli-package-design/references/rest-fronting-design.md"
+sha256 = "d486039e7932b09fcec0b157081da1d8659fb14569ce76d5b13b6e418d3218d4"
+[[files]]
+path = ".agents/skills/cli-package-design/references/versioning-and-release-gates.md"
+sha256 = "be540e41eee6c0425869e9cc564deae7f41d8a8098578d40610964b67a8073d0"
+[[files]]
+path = ".agents/skills/cli-package-design/agents/openai.yaml"
+sha256 = "94358afc01b35a9adf8fe245274062d75c7a98fc168261200db1fbf0d7edf399"
+[[files]]
+path = ".claude/skills/cli-package-design/SKILL.md"
+sha256 = "dca306c45bfd25e5a8e772d4deba9d152df48735a3dc3b35cc9535ea4799ddef"
+[[files]]
+path = ".claude/skills/cli-package-design/assets/templates/cli-contract-v1.md"
+sha256 = "5c5c69b51fe877535c5f2f48703df6cb0802490f15aa60d00f0f58cfd6afa8d5"
+[[files]]
+path = ".claude/skills/cli-package-design/assets/templates/command-manifest.schema.json"
+sha256 = "135685af45ec79e65972797b8868cea1a09d6d09be7142d15257536e3a3b6995"
+[[files]]
+path = ".claude/skills/cli-package-design/assets/templates/exit-code-map-v1.csv"
+sha256 = "f443fe986488cbe33ee26801877272ec69091940bb3aad810c9ec663a9e79817"
+[[files]]
+path = ".claude/skills/cli-package-design/assets/templates/release-evidence-checklist-v1.md"
+sha256 = "4a92b1f38b258ee773d5c27aeeb3ecd44650a4388caff6fa64258bd9b37f22fc"
+[[files]]
+path = ".claude/skills/cli-package-design/references/command-output-error-contracts.md"
+sha256 = "21c3c5f962df8806de5c25c1ca6b3cecdb3e1cfde60410c0b82393922f3caccc"
+[[files]]
+path = ".claude/skills/cli-package-design/references/documentation-and-drift-controls.md"
+sha256 = "509e918f968898adddde6ed0f39caef4451f143f8f5a8354538f469f5963322d"
+[[files]]
+path = ".claude/skills/cli-package-design/references/human-and-agent-interface.md"
+sha256 = "c61ed8b80e1de51327a549e74a1c87fe3d6c24cda2811324ef86757342c8bdb6"
+[[files]]
+path = ".claude/skills/cli-package-design/references/interaction-mutation-and-auth.md"
+sha256 = "b8c9a2713f5dd6840231926d02bd1069c361c76a1cadb6d59e8848e4cbe510b1"
+[[files]]
+path = ".claude/skills/cli-package-design/references/packaging-and-distribution.md"
+sha256 = "e275a4e8b6260b61ceda47cc5b46b578cd84f7017227e9f93a74dc105497e777"
+[[files]]
+path = ".claude/skills/cli-package-design/references/rest-fronting-design.md"
+sha256 = "d486039e7932b09fcec0b157081da1d8659fb14569ce76d5b13b6e418d3218d4"
+[[files]]
+path = ".claude/skills/cli-package-design/references/versioning-and-release-gates.md"
+sha256 = "be540e41eee6c0425869e9cc564deae7f41d8a8098578d40610964b67a8073d0"
+[[files]]
+path = ".agents/skills/repo-memory/SKILL.md"
+sha256 = "b457d09df8582edd10f13c512450c8f122a40a0c1ba7e5d36c0f3c716be38dc6"
+[[files]]
+path = ".agents/skills/repo-memory/assets/templates/agents-md-memory-block-v1.md"
+sha256 = "ee623d8731b34068d9f84e27b05f2695de72dcc171ebad1c4f2c09cbd4291417"
+[[files]]
+path = ".agents/skills/repo-memory/assets/templates/ai-memory-readme-v1.md"
+sha256 = "886bfc35f9f1c91cbdce5bc063d88e6c931f593767255e065387f2f3b829b083"
+[[files]]
+path = ".agents/skills/repo-memory/assets/templates/lesson-template-v1.md"
+sha256 = "ee9256cde9288dfbe7d9d3e734830499cc535cc72e8790a6b172a97871aee140"
+[[files]]
+path = ".agents/skills/repo-memory/assets/templates/memory-smoke-check-prompt-v1.md"
+sha256 = "d85ec74b0e56e335f633ad4cdcbe68e6c9b8288ecb35bec6d26d4c09f49264bf"
+[[files]]
+path = ".agents/skills/repo-memory/scripts/README.md"
+sha256 = "01dd7cf070057330cffa960c5ae6fcac1f8bf9884246abe1787c3a9fadda1430"
+[[files]]
+path = ".agents/skills/repo-memory/scripts/memory_audit.sh"
+sha256 = "a4742fc2e38282571df6b3324a6cc454c79d68cfe56883eb24536d02a3ff69c1"
+[[files]]
+path = ".agents/skills/repo-memory/agents/openai.yaml"
+sha256 = "5806ff986338e248cff052ade3230983534b4542ed9e6fbe8dccf3fcbe61e67c"
+[[files]]
+path = ".claude/skills/repo-memory/SKILL.md"
+sha256 = "b457d09df8582edd10f13c512450c8f122a40a0c1ba7e5d36c0f3c716be38dc6"
+[[files]]
+path = ".claude/skills/repo-memory/assets/templates/agents-md-memory-block-v1.md"
+sha256 = "ee623d8731b34068d9f84e27b05f2695de72dcc171ebad1c4f2c09cbd4291417"
+[[files]]
+path = ".claude/skills/repo-memory/assets/templates/ai-memory-readme-v1.md"
+sha256 = "886bfc35f9f1c91cbdce5bc063d88e6c931f593767255e065387f2f3b829b083"
+[[files]]
+path = ".claude/skills/repo-memory/assets/templates/lesson-template-v1.md"
+sha256 = "ee9256cde9288dfbe7d9d3e734830499cc535cc72e8790a6b172a97871aee140"
+[[files]]
+path = ".claude/skills/repo-memory/assets/templates/memory-smoke-check-prompt-v1.md"
+sha256 = "d85ec74b0e56e335f633ad4cdcbe68e6c9b8288ecb35bec6d26d4c09f49264bf"
+[[files]]
+path = ".claude/skills/repo-memory/scripts/README.md"
+sha256 = "01dd7cf070057330cffa960c5ae6fcac1f8bf9884246abe1787c3a9fadda1430"
+[[files]]
+path = ".claude/skills/repo-memory/scripts/memory_audit.sh"
+sha256 = "a4742fc2e38282571df6b3324a6cc454c79d68cfe56883eb24536d02a3ff69c1"
+[[files]]
+path = "scripts/polymath/repo-memory/README.md"
+sha256 = "01dd7cf070057330cffa960c5ae6fcac1f8bf9884246abe1787c3a9fadda1430"
+[[files]]
+path = "scripts/polymath/repo-memory/memory_audit.sh"
+sha256 = "a4742fc2e38282571df6b3324a6cc454c79d68cfe56883eb24536d02a3ff69c1"
+[[files]]
+path = ".agents/skills/superprompt/SKILL.md"
+sha256 = "3b7046f17b869f81e1905b6fd237dc1e7a8c63da5d7a85dd7b564177895fa824"
+[[files]]
+path = ".agents/skills/superprompt/references/delivery-and-fake-competence.md"
+sha256 = "12ce4a34fdcfe9c2213fe59e1e1a831d0d83a600aba84105b12b1f7d89826aa1"
+[[files]]
+path = ".agents/skills/superprompt/references/intent-decomposition-and-effort.md"
+sha256 = "afd328d03310bcf9de217466e3fbe9a1cda80d013197ca92e4b657cc1beeb5e6"
+[[files]]
+path = ".agents/skills/superprompt/references/self-attack-completeness-and-refusal.md"
+sha256 = "5b9cf597b764e67e329a548b6dba74fd0046d422deac614366901c9cb262c905"
+[[files]]
+path = ".agents/skills/superprompt/references/verification-and-claim-labels.md"
+sha256 = "f5565810ed833b45ea59510401d71824c8e04bf6a91ea33fe2c1a6b8f1d34a0b"
+[[files]]
+path = ".agents/skills/superprompt/agents/openai.yaml"
+sha256 = "7c461fc47a24826b6c32f79bc9057cca5574e40b4549d2980cd5b337ca559665"
+[[files]]
+path = ".claude/skills/superprompt/SKILL.md"
+sha256 = "9eb4e4dfa10fc6673f5241cb8140bbabcede45a874bde690a3c6f02d8e927f02"
+[[files]]
+path = ".claude/skills/superprompt/references/delivery-and-fake-competence.md"
+sha256 = "12ce4a34fdcfe9c2213fe59e1e1a831d0d83a600aba84105b12b1f7d89826aa1"
+[[files]]
+path = ".claude/skills/superprompt/references/intent-decomposition-and-effort.md"
+sha256 = "afd328d03310bcf9de217466e3fbe9a1cda80d013197ca92e4b657cc1beeb5e6"
+[[files]]
+path = ".claude/skills/superprompt/references/self-attack-completeness-and-refusal.md"
+sha256 = "5b9cf597b764e67e329a548b6dba74fd0046d422deac614366901c9cb262c905"
+[[files]]
+path = ".claude/skills/superprompt/references/verification-and-claim-labels.md"
+sha256 = "f5565810ed833b45ea59510401d71824c8e04bf6a91ea33fe2c1a6b8f1d34a0b"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/SKILL.md"
+sha256 = "85b4ee839c68e5de85a8b9ab1580bff4a8cb8c67766b1f7a891c76acae73370d"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/creative-latitude.md"
+sha256 = "61d4fa1853f1cdfe4f58a838bdfaf2af48bfaf0bafdd4b591405cec0b7b671f0"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/failure-mode-counters.md"
+sha256 = "75baee986c50994864c81c6e3259a71225d876de993e6bb217eb3960a7111eae"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/load-bearing-content.md"
+sha256 = "be88a6c3fa689ed6d67d0dfbb54ef29c789da762a0b5feb3b54ceef59715ef9c"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/off-prompt-levers.md"
+sha256 = "085c07ef2074e8f14b662864962ea0b451a6f4802b15088bfce8df9481d331b9"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/subtractive-pass.md"
+sha256 = "83e0d5fb00361588240a54987043fd1817a544715d765276d9c3887faa930ea2"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/references/uplift-report-format.md"
+sha256 = "b28460db65270d4bbf292ef9bfa11cfad26e1c647d2ecc10f00ce448fb1eacf4"
+[[files]]
+path = ".agents/skills/frontier-prompt-uplift/agents/openai.yaml"
+sha256 = "c9fc63332e79fb4eff4a83a9ab5fafeb7d1f9c01147760136de6ec9be847932c"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/SKILL.md"
+sha256 = "3c428e0f15c28b849067cccd384843a392471475329078b555c166565d1fea8e"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/creative-latitude.md"
+sha256 = "61d4fa1853f1cdfe4f58a838bdfaf2af48bfaf0bafdd4b591405cec0b7b671f0"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/failure-mode-counters.md"
+sha256 = "75baee986c50994864c81c6e3259a71225d876de993e6bb217eb3960a7111eae"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/load-bearing-content.md"
+sha256 = "be88a6c3fa689ed6d67d0dfbb54ef29c789da762a0b5feb3b54ceef59715ef9c"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/off-prompt-levers.md"
+sha256 = "085c07ef2074e8f14b662864962ea0b451a6f4802b15088bfce8df9481d331b9"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/subtractive-pass.md"
+sha256 = "83e0d5fb00361588240a54987043fd1817a544715d765276d9c3887faa930ea2"
+[[files]]
+path = ".claude/skills/frontier-prompt-uplift/references/uplift-report-format.md"
+sha256 = "b28460db65270d4bbf292ef9bfa11cfad26e1c647d2ecc10f00ce448fb1eacf4"
+[[files]]
+path = ".agents/skills/python-cli-app/SKILL.md"
+sha256 = "8f7d2fa2d3aed43921ff4902b0c6f9dc6428a5216d5ee128527c5fd1ef57b0c0"
+[[files]]
+path = ".agents/skills/python-cli-app/assets/templates/cli-contract-v1.md"
+sha256 = "b72028704bd0d74e3b32fb74e5255f7491e16de41e25dce757f1e4705c16d566"
+[[files]]
+path = ".agents/skills/python-cli-app/assets/templates/cli_skeleton.py"
+sha256 = "a6d5d7ce253b41b6c44c5a4feda2ccae23e29636dcd7dfd24f4fba9e6f922f69"
+[[files]]
+path = ".agents/skills/python-cli-app/assets/templates/exit-code-map-v1.csv"
+sha256 = "377d5907802019383d4cb6d3350dae2ca093e51de865689f8ffeee395e9979db"
+[[files]]
+path = ".agents/skills/python-cli-app/assets/templates/pyproject-baseline.toml"
+sha256 = "3ed424e0a11236406ae33f4ae99754642fe40f9246213ac2d9ab5982370abc0d"
+[[files]]
+path = ".agents/skills/python-cli-app/assets/templates/test_cli_contract.py"
+sha256 = "7db11dbc710800939f7268090396d7cd4557f32d99ddd94ba962d71b7b5a608b"
+[[files]]
+path = ".agents/skills/python-cli-app/references/cli-architecture.md"
+sha256 = "ab65c67387f3d6f723d41c9dd064287734ec79cf81eb7857ccb45a5e882ebd90"
+[[files]]
+path = ".agents/skills/python-cli-app/references/command-and-output-contracts.md"
+sha256 = "080c677833ce3c47e4f78cd10debca93ce34da9b2a71b47c63c97cae120bf934"
+[[files]]
+path = ".agents/skills/python-cli-app/references/config-and-noninteractive.md"
+sha256 = "1c083adf94b386ac28379a0e92bd71c96e37a77525c7d3b53147a3fe9fb7b87e"
+[[files]]
+path = ".agents/skills/python-cli-app/references/project-bootstrap.md"
+sha256 = "fd37339a873c810d724c2793c43a95bd9127124b8f876e7f843defa81f1d186e"
+[[files]]
+path = ".agents/skills/python-cli-app/references/testing-and-gates.md"
+sha256 = "e3c311402353ea61e5e0579a5f34537358c91fa1752bf0444b4eaf27df55ff92"
+[[files]]
+path = ".agents/skills/python-cli-app/scripts/README.md"
+sha256 = "aff0ba46328480978c4450a5c184f5f61a506b9740ea077add76b6d756ce21a6"
+[[files]]
+path = ".agents/skills/python-cli-app/scripts/check_cli_contract.sh"
+sha256 = "09e20849c59bfd932e506e3d256001ed18103784162cdfbe981faae3d3e04c2a"
+[[files]]
+path = ".agents/skills/python-cli-app/agents/openai.yaml"
+sha256 = "60067da129e483a0e9a8f4b01f96d30c487ad487f81dcef662339c79b3da6483"
+[[files]]
+path = ".claude/skills/python-cli-app/SKILL.md"
+sha256 = "8f7d2fa2d3aed43921ff4902b0c6f9dc6428a5216d5ee128527c5fd1ef57b0c0"
+[[files]]
+path = ".claude/skills/python-cli-app/assets/templates/cli-contract-v1.md"
+sha256 = "b72028704bd0d74e3b32fb74e5255f7491e16de41e25dce757f1e4705c16d566"
+[[files]]
+path = ".claude/skills/python-cli-app/assets/templates/cli_skeleton.py"
+sha256 = "a6d5d7ce253b41b6c44c5a4feda2ccae23e29636dcd7dfd24f4fba9e6f922f69"
+[[files]]
+path = ".claude/skills/python-cli-app/assets/templates/exit-code-map-v1.csv"
+sha256 = "377d5907802019383d4cb6d3350dae2ca093e51de865689f8ffeee395e9979db"
+[[files]]
+path = ".claude/skills/python-cli-app/assets/templates/pyproject-baseline.toml"
+sha256 = "3ed424e0a11236406ae33f4ae99754642fe40f9246213ac2d9ab5982370abc0d"
+[[files]]
+path = ".claude/skills/python-cli-app/assets/templates/test_cli_contract.py"
+sha256 = "7db11dbc710800939f7268090396d7cd4557f32d99ddd94ba962d71b7b5a608b"
+[[files]]
+path = ".claude/skills/python-cli-app/references/cli-architecture.md"
+sha256 = "ab65c67387f3d6f723d41c9dd064287734ec79cf81eb7857ccb45a5e882ebd90"
+[[files]]
+path = ".claude/skills/python-cli-app/references/command-and-output-contracts.md"
+sha256 = "080c677833ce3c47e4f78cd10debca93ce34da9b2a71b47c63c97cae120bf934"
+[[files]]
+path = ".claude/skills/python-cli-app/references/config-and-noninteractive.md"
+sha256 = "1c083adf94b386ac28379a0e92bd71c96e37a77525c7d3b53147a3fe9fb7b87e"
+[[files]]
+path = ".claude/skills/python-cli-app/references/project-bootstrap.md"
+sha256 = "fd37339a873c810d724c2793c43a95bd9127124b8f876e7f843defa81f1d186e"
+[[files]]
+path = ".claude/skills/python-cli-app/references/testing-and-gates.md"
+sha256 = "e3c311402353ea61e5e0579a5f34537358c91fa1752bf0444b4eaf27df55ff92"
+[[files]]
+path = ".claude/skills/python-cli-app/scripts/README.md"
+sha256 = "aff0ba46328480978c4450a5c184f5f61a506b9740ea077add76b6d756ce21a6"
+[[files]]
+path = ".claude/skills/python-cli-app/scripts/check_cli_contract.sh"
+sha256 = "09e20849c59bfd932e506e3d256001ed18103784162cdfbe981faae3d3e04c2a"
+[[files]]
+path = "scripts/polymath/python-cli-app/README.md"
+sha256 = "aff0ba46328480978c4450a5c184f5f61a506b9740ea077add76b6d756ce21a6"
+[[files]]
+path = "scripts/polymath/python-cli-app/check_cli_contract.sh"
+sha256 = "09e20849c59bfd932e506e3d256001ed18103784162cdfbe981faae3d3e04c2a"
+[[files]]
+path = ".agents/skills/python-style-guide/SKILL.md"
+sha256 = "598a62e0a7ecebf37b2e5831d4ee527dfb4d4a57203ce992cb3480432efa4a81"
+[[files]]
+path = ".agents/skills/python-style-guide/assets/normalization-record-v1.md"
+sha256 = "28061a59e0d77a524636a76dc3ac55218fb328a5e40304aa65e0091d9410a99e"
+[[files]]
+path = ".agents/skills/python-style-guide/assets/ruff-pyright-baseline.toml"
+sha256 = "09ed99a6c1840b6e98687e091d8e2ceac37bba05396aa2e07d1094cba822ad39"
+[[files]]
+path = ".agents/skills/python-style-guide/assets/style-scorecard-v1.md"
+sha256 = "186b80f8e5be0a0907b570414a02bb38b3e132cc311c5171e07beb87b3f41da7"
+[[files]]
+path = ".agents/skills/python-style-guide/assets/tricky-comment-template.txt"
+sha256 = "1dc76b1b2fe1668977c4c446a7fdc028d419e7a42fdf259e9e01242bee463dcc"
+[[files]]
+path = ".agents/skills/python-style-guide/references/audit-lane.md"
+sha256 = "5f2cee5b506a0d993e588fc5e6e172b362a9ba78fb8f81270ac285c76821a534"
+[[files]]
+path = ".agents/skills/python-style-guide/references/author-lane.md"
+sha256 = "0bdc972f2c12f29efc71243ccf3827a3d3637204d49d0ec4e2ec9caf38a1db31"
+[[files]]
+path = ".agents/skills/python-style-guide/references/comments-docs-tests.md"
+sha256 = "9bdd8ea0c37e28561d87dcc5963e59dcb6273c742978005a0eaf3a8bdf4d59eb"
+[[files]]
+path = ".agents/skills/python-style-guide/references/comprehensions-and-iteration.md"
+sha256 = "f7b2dec9875d577d7ec1f842e43b7bdebe1a49093f5c96f0be4980dd57cb7d60"
+[[files]]
+path = ".agents/skills/python-style-guide/references/concurrency-and-async.md"
+sha256 = "be5a4dd9d5dea97601a069c9c472e559569b58c0cd1b7bee1de11de284bb131a"
+[[files]]
+path = ".agents/skills/python-style-guide/references/control-flow-naming-modules.md"
+sha256 = "f986d2a2144b152eb0d87b9fc1dc1a34794610b8c307f9f3c89f0774a8c93333"
+[[files]]
+path = ".agents/skills/python-style-guide/references/errors-and-exceptions.md"
+sha256 = "4171d22dca3388f5d0e5a5762713bd3ad77a3234ad83c498b9cd9bdf439256c0"
+[[files]]
+path = ".agents/skills/python-style-guide/references/frontier-antipattern-catalog.md"
+sha256 = "6cbf8840bbe30e0808939d62b72ce849754e52ba191c0396f273f9ffb8d5957b"
+[[files]]
+path = ".agents/skills/python-style-guide/references/lint-posture.md"
+sha256 = "0d037b54cf79116f7bb51b2a1485886bb8be766895642cc2995d7752622870c2"
+[[files]]
+path = ".agents/skills/python-style-guide/references/metaprogramming-and-dynamism.md"
+sha256 = "1b0ee2c4bea0752d9013fd437df6bbd0bdedf01576e74a7489a4751a20ffc2c0"
+[[files]]
+path = ".agents/skills/python-style-guide/references/review-normalize-lane.md"
+sha256 = "3a284eb6d25adf5b55c0d107ab533f851b94d0cd0c91c8012b8fb010a150ef19"
+[[files]]
+path = ".agents/skills/python-style-guide/references/safety-and-security.md"
+sha256 = "bfa4524156edb8221a541284da1717fdd16dae7e6eddc9f645fec9e6c738d1f4"
+[[files]]
+path = ".agents/skills/python-style-guide/references/sources.md"
+sha256 = "8185ab50e0a241ee46241207d864dbdea981a643a5230682fe0a27ea17347cbc"
+[[files]]
+path = ".agents/skills/python-style-guide/references/tricky-code-gate.md"
+sha256 = "b1c437c8d23b7e5482e3080da1f3b71da6bbeda1d96bbbd00fb673e43944b4b8"
+[[files]]
+path = ".agents/skills/python-style-guide/references/types-and-data.md"
+sha256 = "05b85be6fe2de9e632960b727ca76721a08a64d922f43499f791e7f9403e35cf"
+[[files]]
+path = ".agents/skills/python-style-guide/agents/openai.yaml"
+sha256 = "2b444f6a63da5a249dc3de7cf031da3f02a1cad248837e71f5e918e89913b8af"
+[[files]]
+path = ".claude/skills/python-style-guide/SKILL.md"
+sha256 = "598a62e0a7ecebf37b2e5831d4ee527dfb4d4a57203ce992cb3480432efa4a81"
+[[files]]
+path = ".claude/skills/python-style-guide/assets/normalization-record-v1.md"
+sha256 = "28061a59e0d77a524636a76dc3ac55218fb328a5e40304aa65e0091d9410a99e"
+[[files]]
+path = ".claude/skills/python-style-guide/assets/ruff-pyright-baseline.toml"
+sha256 = "09ed99a6c1840b6e98687e091d8e2ceac37bba05396aa2e07d1094cba822ad39"
+[[files]]
+path = ".claude/skills/python-style-guide/assets/style-scorecard-v1.md"
+sha256 = "186b80f8e5be0a0907b570414a02bb38b3e132cc311c5171e07beb87b3f41da7"
+[[files]]
+path = ".claude/skills/python-style-guide/assets/tricky-comment-template.txt"
+sha256 = "1dc76b1b2fe1668977c4c446a7fdc028d419e7a42fdf259e9e01242bee463dcc"
+[[files]]
+path = ".claude/skills/python-style-guide/references/audit-lane.md"
+sha256 = "5f2cee5b506a0d993e588fc5e6e172b362a9ba78fb8f81270ac285c76821a534"
+[[files]]
+path = ".claude/skills/python-style-guide/references/author-lane.md"
+sha256 = "0bdc972f2c12f29efc71243ccf3827a3d3637204d49d0ec4e2ec9caf38a1db31"
+[[files]]
+path = ".claude/skills/python-style-guide/references/comments-docs-tests.md"
+sha256 = "9bdd8ea0c37e28561d87dcc5963e59dcb6273c742978005a0eaf3a8bdf4d59eb"
+[[files]]
+path = ".claude/skills/python-style-guide/references/comprehensions-and-iteration.md"
+sha256 = "f7b2dec9875d577d7ec1f842e43b7bdebe1a49093f5c96f0be4980dd57cb7d60"
+[[files]]
+path = ".claude/skills/python-style-guide/references/concurrency-and-async.md"
+sha256 = "be5a4dd9d5dea97601a069c9c472e559569b58c0cd1b7bee1de11de284bb131a"
+[[files]]
+path = ".claude/skills/python-style-guide/references/control-flow-naming-modules.md"
+sha256 = "f986d2a2144b152eb0d87b9fc1dc1a34794610b8c307f9f3c89f0774a8c93333"
+[[files]]
+path = ".claude/skills/python-style-guide/references/errors-and-exceptions.md"
+sha256 = "4171d22dca3388f5d0e5a5762713bd3ad77a3234ad83c498b9cd9bdf439256c0"
+[[files]]
+path = ".claude/skills/python-style-guide/references/frontier-antipattern-catalog.md"
+sha256 = "6cbf8840bbe30e0808939d62b72ce849754e52ba191c0396f273f9ffb8d5957b"
+[[files]]
+path = ".claude/skills/python-style-guide/references/lint-posture.md"
+sha256 = "0d037b54cf79116f7bb51b2a1485886bb8be766895642cc2995d7752622870c2"
+[[files]]
+path = ".claude/skills/python-style-guide/references/metaprogramming-and-dynamism.md"
+sha256 = "1b0ee2c4bea0752d9013fd437df6bbd0bdedf01576e74a7489a4751a20ffc2c0"
+[[files]]
+path = ".claude/skills/python-style-guide/references/review-normalize-lane.md"
+sha256 = "3a284eb6d25adf5b55c0d107ab533f851b94d0cd0c91c8012b8fb010a150ef19"
+[[files]]
+path = ".claude/skills/python-style-guide/references/safety-and-security.md"
+sha256 = "bfa4524156edb8221a541284da1717fdd16dae7e6eddc9f645fec9e6c738d1f4"
+[[files]]
+path = ".claude/skills/python-style-guide/references/sources.md"
+sha256 = "8185ab50e0a241ee46241207d864dbdea981a643a5230682fe0a27ea17347cbc"
+[[files]]
+path = ".claude/skills/python-style-guide/references/tricky-code-gate.md"
+sha256 = "b1c437c8d23b7e5482e3080da1f3b71da6bbeda1d96bbbd00fb673e43944b4b8"
+[[files]]
+path = ".claude/skills/python-style-guide/references/types-and-data.md"
+sha256 = "05b85be6fe2de9e632960b727ca76721a08a64d922f43499f791e7f9403e35cf"
+[[files]]
+path = ".agents/skills/python-test-harness/SKILL.md"
+sha256 = "7186e1002ba179cedb541143e191085f4b3ec44101ecd8a4ff186d8bc90213b0"
+[[files]]
+path = ".agents/skills/python-test-harness/assets/templates/conftest_hermetic.py"
+sha256 = "c4e1b5ee84c85e1bd26635011aff95304707edcbd2bee4239e33ab3060e6cf1f"
+[[files]]
+path = ".agents/skills/python-test-harness/assets/templates/golden-update-log-block.md"
+sha256 = "fcf5779f86096572afbc2fce580d7492c8a7d7708d49413c60c16f99c65e2461"
+[[files]]
+path = ".agents/skills/python-test-harness/assets/templates/test_hermetic_control.py"
+sha256 = "0c3499e7a9e151064a79a6def1b4c9a44118921b0f2c4abb3358825ad8426492"
+[[files]]
+path = ".agents/skills/python-test-harness/references/coverage-and-gate-contract.md"
+sha256 = "60730bd24b838ad624caac5d88d20ce6eac30a59064a838be5b3e7a64234a586"
+[[files]]
+path = ".agents/skills/python-test-harness/references/goldens-and-approval.md"
+sha256 = "0c77dbb7f9553ff45bbadfd97207f7e316d732645a0a8e5e10060e7a12398489"
+[[files]]
+path = ".agents/skills/python-test-harness/references/hermetic-fixtures.md"
+sha256 = "da3d7d5fdf6f1654b45c98b61a7e1a3d080c066367caf912c76591485efd7d8c"
+[[files]]
+path = ".agents/skills/python-test-harness/references/ownership-and-lanes.md"
+sha256 = "ce5ee9506ef08fd358a18bf57f3b752c92eeb716637f67665f4bc706389bc637"
+[[files]]
+path = ".agents/skills/python-test-harness/references/reporting-contracts.md"
+sha256 = "77d4620c4b67916d12468f1414a7d215cf3c795cbdf74f1e1b62b95936493fd7"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/README.md"
+sha256 = "76a499942f35e93b5634a5534b55a2f35c7d13ae9ce557e7feee3aa08e285044"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/_common.sh"
+sha256 = "9f440934cca9485ed20d00df5414423210c7a06f354cd58e839bd3edbda7e2c7"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/check_quality.sh"
+sha256 = "715433d0e65cbe6b8e0a77f4319ff545ff8035f5705725012dab1567b7c708da"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/coverage_gate.sh"
+sha256 = "d963f0fad9bb780ef45b3bd40c7e4a70bb04d1b775fea723c2bafecf8e2da61d"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/golden_text_gate.sh"
+sha256 = "a6e17e9d2c1de5423261bec1f0176a774738e1db820e804252c5900f0f6da6dc"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/project.env.example"
+sha256 = "2809b630100942fb65114b7b87402e912cb3a6a85e709d26bf6f8a0b1ed81eda"
+[[files]]
+path = ".agents/skills/python-test-harness/scripts/run_qa_matrix.sh"
+sha256 = "962358df7606448ede9994d5cd84ae3164eff373ebbdebfffb53fe091cadb423"
+[[files]]
+path = ".agents/skills/python-test-harness/agents/openai.yaml"
+sha256 = "f0892519e1f07fa191d9ff31588afcc70d659860b1f7c0d45e2f9ce297c5fd81"
+[[files]]
+path = ".claude/skills/python-test-harness/SKILL.md"
+sha256 = "7186e1002ba179cedb541143e191085f4b3ec44101ecd8a4ff186d8bc90213b0"
+[[files]]
+path = ".claude/skills/python-test-harness/assets/templates/conftest_hermetic.py"
+sha256 = "c4e1b5ee84c85e1bd26635011aff95304707edcbd2bee4239e33ab3060e6cf1f"
+[[files]]
+path = ".claude/skills/python-test-harness/assets/templates/golden-update-log-block.md"
+sha256 = "fcf5779f86096572afbc2fce580d7492c8a7d7708d49413c60c16f99c65e2461"
+[[files]]
+path = ".claude/skills/python-test-harness/assets/templates/test_hermetic_control.py"
+sha256 = "0c3499e7a9e151064a79a6def1b4c9a44118921b0f2c4abb3358825ad8426492"
+[[files]]
+path = ".claude/skills/python-test-harness/references/coverage-and-gate-contract.md"
+sha256 = "60730bd24b838ad624caac5d88d20ce6eac30a59064a838be5b3e7a64234a586"
+[[files]]
+path = ".claude/skills/python-test-harness/references/goldens-and-approval.md"
+sha256 = "0c77dbb7f9553ff45bbadfd97207f7e316d732645a0a8e5e10060e7a12398489"
+[[files]]
+path = ".claude/skills/python-test-harness/references/hermetic-fixtures.md"
+sha256 = "da3d7d5fdf6f1654b45c98b61a7e1a3d080c066367caf912c76591485efd7d8c"
+[[files]]
+path = ".claude/skills/python-test-harness/references/ownership-and-lanes.md"
+sha256 = "ce5ee9506ef08fd358a18bf57f3b752c92eeb716637f67665f4bc706389bc637"
+[[files]]
+path = ".claude/skills/python-test-harness/references/reporting-contracts.md"
+sha256 = "77d4620c4b67916d12468f1414a7d215cf3c795cbdf74f1e1b62b95936493fd7"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/README.md"
+sha256 = "76a499942f35e93b5634a5534b55a2f35c7d13ae9ce557e7feee3aa08e285044"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/_common.sh"
+sha256 = "9f440934cca9485ed20d00df5414423210c7a06f354cd58e839bd3edbda7e2c7"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/check_quality.sh"
+sha256 = "715433d0e65cbe6b8e0a77f4319ff545ff8035f5705725012dab1567b7c708da"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/coverage_gate.sh"
+sha256 = "d963f0fad9bb780ef45b3bd40c7e4a70bb04d1b775fea723c2bafecf8e2da61d"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/golden_text_gate.sh"
+sha256 = "a6e17e9d2c1de5423261bec1f0176a774738e1db820e804252c5900f0f6da6dc"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/project.env.example"
+sha256 = "2809b630100942fb65114b7b87402e912cb3a6a85e709d26bf6f8a0b1ed81eda"
+[[files]]
+path = ".claude/skills/python-test-harness/scripts/run_qa_matrix.sh"
+sha256 = "962358df7606448ede9994d5cd84ae3164eff373ebbdebfffb53fe091cadb423"
+[[files]]
+path = "scripts/polymath/python-test-harness/README.md"
+sha256 = "76a499942f35e93b5634a5534b55a2f35c7d13ae9ce557e7feee3aa08e285044"
+[[files]]
+path = "scripts/polymath/python-test-harness/_common.sh"
+sha256 = "9f440934cca9485ed20d00df5414423210c7a06f354cd58e839bd3edbda7e2c7"
+[[files]]
+path = "scripts/polymath/python-test-harness/check_quality.sh"
+sha256 = "715433d0e65cbe6b8e0a77f4319ff545ff8035f5705725012dab1567b7c708da"
+[[files]]
+path = "scripts/polymath/python-test-harness/coverage_gate.sh"
+sha256 = "d963f0fad9bb780ef45b3bd40c7e4a70bb04d1b775fea723c2bafecf8e2da61d"
+[[files]]
+path = "scripts/polymath/python-test-harness/golden_text_gate.sh"
+sha256 = "a6e17e9d2c1de5423261bec1f0176a774738e1db820e804252c5900f0f6da6dc"
+[[files]]
+path = "scripts/polymath/python-test-harness/project.env.example"
+sha256 = "2809b630100942fb65114b7b87402e912cb3a6a85e709d26bf6f8a0b1ed81eda"
+[[files]]
+path = "scripts/polymath/python-test-harness/run_qa_matrix.sh"
+sha256 = "962358df7606448ede9994d5cd84ae3164eff373ebbdebfffb53fe091cadb423"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/SKILL.md"
+sha256 = "9d436835b0b2b3b5b52699e79e0693afae3b121338d1d6b5381483b6d30f9fdf"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/references/authoring-and-debugging.md"
+sha256 = "9935ff776d9734716bb56f3f1084cf5b63d517a152471ea7e43e40adda2e182a"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/references/guide-browser-qa.md"
+sha256 = "fd3bd50d646e32924a405340730be1f73edf15822008a3b5c0cb008073b1945d"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/references/quickstart-and-baseline.md"
+sha256 = "0a5c6c9a75b903691425b81fc4f9f85afa2b2367f207786f39357b5288f9214d"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/references/rust-integration-patterns.md"
+sha256 = "9dbe780460247463c2b9d30f959b4b2d661f746b1b49fc3989181ddce84f4b32"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/references/scaling-and-governance.md"
+sha256 = "2a3c445befb933b2558207abdf92b7d2c8ddee94e0ce9b6b33879c527fa643bb"
+[[files]]
+path = ".agents/skills/playwright-browser-qa/agents/openai.yaml"
+sha256 = "9bbae29d5e8e438bff443124bf136bea82fd1b4237dc72185f67c6ca8b168d33"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/SKILL.md"
+sha256 = "9d436835b0b2b3b5b52699e79e0693afae3b121338d1d6b5381483b6d30f9fdf"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/references/authoring-and-debugging.md"
+sha256 = "9935ff776d9734716bb56f3f1084cf5b63d517a152471ea7e43e40adda2e182a"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/references/guide-browser-qa.md"
+sha256 = "fd3bd50d646e32924a405340730be1f73edf15822008a3b5c0cb008073b1945d"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/references/quickstart-and-baseline.md"
+sha256 = "0a5c6c9a75b903691425b81fc4f9f85afa2b2367f207786f39357b5288f9214d"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/references/rust-integration-patterns.md"
+sha256 = "9dbe780460247463c2b9d30f959b4b2d661f746b1b49fc3989181ddce84f4b32"
+[[files]]
+path = ".claude/skills/playwright-browser-qa/references/scaling-and-governance.md"
+sha256 = "2a3c445befb933b2558207abdf92b7d2c8ddee94e0ce9b6b33879c527fa643bb"
+[[files]]
+path = ".agents/skills/playwright/LICENSE.txt"
+sha256 = "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda"
+[[files]]
+path = ".agents/skills/playwright/NOTICE.txt"
+sha256 = "417d5d3372914ecfd9fe102ac1d7dc2119253209f9718d6c222f616876c1904b"
+[[files]]
+path = ".agents/skills/playwright/SKILL.md"
+sha256 = "ff9159868d566e54aaf286a32399f2a1b1232c2018e7bcde8aee88d90c998904"
+[[files]]
+path = ".agents/skills/playwright/assets/playwright-small.svg"
+sha256 = "f1d213c0f76735d8272c3d3e9fbf71fe7b894e2d1588907044c780f2c33a9732"
+[[files]]
+path = ".agents/skills/playwright/assets/playwright.png"
+sha256 = "521669f088c838196c6c852ccc9abdd7234d8f37fc9a8a7a9af7db2d50193381"
+[[files]]
+path = ".agents/skills/playwright/references/cli.md"
+sha256 = "6c9b99a652760ae6bf82d349387f7297fcae517a812d3384cf1a8f72c6142198"
+[[files]]
+path = ".agents/skills/playwright/references/workflows.md"
+sha256 = "a2b5835a00ebee3906c146adf7f764f7718ea3f89a8702d86eaa135dfe0fc8c2"
+[[files]]
+path = ".agents/skills/playwright/scripts/playwright_cli.sh"
+sha256 = "aa3fdff5d0e4556177f4dfd5f04117e772aa54f94b6a2e34b6c0edf629c6b9b5"
+[[files]]
+path = ".agents/skills/playwright/agents/openai.yaml"
+sha256 = "ddda43720fc566fffa45264be8f17f7745a3cee28d5245d41d3b963bc9967230"
+[[files]]
+path = ".claude/skills/playwright/LICENSE.txt"
+sha256 = "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda"
+[[files]]
+path = ".claude/skills/playwright/NOTICE.txt"
+sha256 = "417d5d3372914ecfd9fe102ac1d7dc2119253209f9718d6c222f616876c1904b"
+[[files]]
+path = ".claude/skills/playwright/SKILL.md"
+sha256 = "ff9159868d566e54aaf286a32399f2a1b1232c2018e7bcde8aee88d90c998904"
+[[files]]
+path = ".claude/skills/playwright/assets/playwright-small.svg"
+sha256 = "f1d213c0f76735d8272c3d3e9fbf71fe7b894e2d1588907044c780f2c33a9732"
+[[files]]
+path = ".claude/skills/playwright/assets/playwright.png"
+sha256 = "521669f088c838196c6c852ccc9abdd7234d8f37fc9a8a7a9af7db2d50193381"
+[[files]]
+path = ".claude/skills/playwright/references/cli.md"
+sha256 = "6c9b99a652760ae6bf82d349387f7297fcae517a812d3384cf1a8f72c6142198"
+[[files]]
+path = ".claude/skills/playwright/references/workflows.md"
+sha256 = "a2b5835a00ebee3906c146adf7f764f7718ea3f89a8702d86eaa135dfe0fc8c2"
+[[files]]
+path = ".claude/skills/playwright/scripts/playwright_cli.sh"
+sha256 = "aa3fdff5d0e4556177f4dfd5f04117e772aa54f94b6a2e34b6c0edf629c6b9b5"
+[[files]]
+path = "scripts/polymath/playwright/playwright_cli.sh"
+sha256 = "aa3fdff5d0e4556177f4dfd5f04117e772aa54f94b6a2e34b6c0edf629c6b9b5"
+[[files]]
+path = ".agents/skills/web-frontend-bootstrap/SKILL.md"
+sha256 = "444b17ba1c6d25d82738c4ede5985622f118bfbda550d7d8f18d312df3ce6b20"
+[[files]]
+path = ".agents/skills/web-frontend-bootstrap/agents/openai.yaml"
+sha256 = "51788f5a012f1d912508bacd288071895e92f3f0968c561b98d7570c8f22ad7b"
+[[files]]
+path = ".claude/skills/web-frontend-bootstrap/SKILL.md"
+sha256 = "444b17ba1c6d25d82738c4ede5985622f118bfbda550d7d8f18d312df3ce6b20"
+[[files]]
+path = ".agents/skills/independent-audit/SKILL.md"
+sha256 = "f745bf3ef0736e2ee56bc802ed1375f5d26e966b0b21f591933059be8e5e3e90"
+[[files]]
+path = ".agents/skills/independent-audit/assets/audit-report-template.md"
+sha256 = "998b3a52630fae6da0b361f8536b97edf2b8f0f644b2fbf9945cc02e3472ce64"
+[[files]]
+path = ".agents/skills/independent-audit/assets/auditee-claims-register-template.md"
+sha256 = "5005fb518c9ea8d8884537db99f829cc1c378cae1b80d4beb3051cf5636e3b0f"
+[[files]]
+path = ".agents/skills/independent-audit/assets/findings-register-template.md"
+sha256 = "5db6164dd73962720c8415f18288ca9fa0e5128e07228eae4c8b3e56e39188a4"
+[[files]]
+path = ".agents/skills/independent-audit/assets/notes-to-auditor-template.md"
+sha256 = "e43b67225ecb219d6641630552f505185f7e9bf55c90b025046c98ad737d9bdc"
+[[files]]
+path = ".agents/skills/independent-audit/references/branch-release-audits.md"
+sha256 = "94b99a3ac98a4fb4f589a2933e227f902cd0d59375f790f388a6bf1b13382495"
+[[files]]
+path = ".agents/skills/independent-audit/references/corpus-alignment-audits.md"
+sha256 = "ae79ce63679192243c78ffcef8f565af15f38947791a6a03b534b0fc672968db"
+[[files]]
+path = ".agents/skills/independent-audit/references/design-plan-roadmap-audits.md"
+sha256 = "a6d2d310156b902818087d076e59cbe52215a6ac1a5267011247fb6ab302b61f"
+[[files]]
+path = ".agents/skills/independent-audit/references/development-acceptance-audits.md"
+sha256 = "427bfb772ff91b75f455e9064a66bdc5352c55b2069f521694abf2f2270321e9"
+[[files]]
+path = ".agents/skills/independent-audit/references/evidence-safety-and-authority.md"
+sha256 = "b21a20075e5a15cc687ddfa72a393a006547b0ca819503aca8329248e9ea7fa1"
+[[files]]
+path = ".agents/skills/independent-audit/references/invoking-an-audit.md"
+sha256 = "03c22c5f23f67ca69041be97d7ee2f4530220d7db8b19f97f553ff2963c2e19f"
+[[files]]
+path = ".agents/skills/independent-audit/references/milestone-conformance-audits.md"
+sha256 = "d0353f3e98992eeab6ce87e82c1e62d7f4e9190bdc73b4977564afec0a2846c0"
+[[files]]
+path = ".agents/skills/independent-audit/references/report-quality-and-calibration.md"
+sha256 = "9f51728e61db1419db8edefba705bc76934419fe40004144032c1203cdc79ce3"
+[[files]]
+path = ".agents/skills/independent-audit/references/security-performance-and-operations.md"
+sha256 = "ae3bca9b1a284d7457876967f82a90fc7ac2f7e8635a28787aad38096a1b9e6f"
+[[files]]
+path = ".agents/skills/independent-audit/references/skill-package-audits.md"
+sha256 = "593f219895a3f2df50bd6146657d2475575ec03c3e454240e4d6e3a8b4f3a4a1"
+[[files]]
+path = ".agents/skills/independent-audit/agents/openai.yaml"
+sha256 = "9f0269e79ef219639391889aaffbf8a3e35bdb2efa4786a17946c5f9891539a8"
+[[files]]
+path = ".claude/skills/independent-audit/SKILL.md"
+sha256 = "b5df684d1858cd927e0f1a2a4f3edd7ffef08c11738b1fc6d951fcbb5ca57785"
+[[files]]
+path = ".claude/skills/independent-audit/assets/audit-report-template.md"
+sha256 = "998b3a52630fae6da0b361f8536b97edf2b8f0f644b2fbf9945cc02e3472ce64"
+[[files]]
+path = ".claude/skills/independent-audit/assets/auditee-claims-register-template.md"
+sha256 = "5005fb518c9ea8d8884537db99f829cc1c378cae1b80d4beb3051cf5636e3b0f"
+[[files]]
+path = ".claude/skills/independent-audit/assets/findings-register-template.md"
+sha256 = "5db6164dd73962720c8415f18288ca9fa0e5128e07228eae4c8b3e56e39188a4"
+[[files]]
+path = ".claude/skills/independent-audit/assets/notes-to-auditor-template.md"
+sha256 = "e43b67225ecb219d6641630552f505185f7e9bf55c90b025046c98ad737d9bdc"
+[[files]]
+path = ".claude/skills/independent-audit/references/branch-release-audits.md"
+sha256 = "94b99a3ac98a4fb4f589a2933e227f902cd0d59375f790f388a6bf1b13382495"
+[[files]]
+path = ".claude/skills/independent-audit/references/corpus-alignment-audits.md"
+sha256 = "ae79ce63679192243c78ffcef8f565af15f38947791a6a03b534b0fc672968db"
+[[files]]
+path = ".claude/skills/independent-audit/references/design-plan-roadmap-audits.md"
+sha256 = "a6d2d310156b902818087d076e59cbe52215a6ac1a5267011247fb6ab302b61f"
+[[files]]
+path = ".claude/skills/independent-audit/references/development-acceptance-audits.md"
+sha256 = "427bfb772ff91b75f455e9064a66bdc5352c55b2069f521694abf2f2270321e9"
+[[files]]
+path = ".claude/skills/independent-audit/references/evidence-safety-and-authority.md"
+sha256 = "b21a20075e5a15cc687ddfa72a393a006547b0ca819503aca8329248e9ea7fa1"
+[[files]]
+path = ".claude/skills/independent-audit/references/invoking-an-audit.md"
+sha256 = "03c22c5f23f67ca69041be97d7ee2f4530220d7db8b19f97f553ff2963c2e19f"
+[[files]]
+path = ".claude/skills/independent-audit/references/milestone-conformance-audits.md"
+sha256 = "d0353f3e98992eeab6ce87e82c1e62d7f4e9190bdc73b4977564afec0a2846c0"
+[[files]]
+path = ".claude/skills/independent-audit/references/report-quality-and-calibration.md"
+sha256 = "9f51728e61db1419db8edefba705bc76934419fe40004144032c1203cdc79ce3"
+[[files]]
+path = ".claude/skills/independent-audit/references/security-performance-and-operations.md"
+sha256 = "ae3bca9b1a284d7457876967f82a90fc7ac2f7e8635a28787aad38096a1b9e6f"
+[[files]]
+path = ".claude/skills/independent-audit/references/skill-package-audits.md"
+sha256 = "593f219895a3f2df50bd6146657d2475575ec03c3e454240e4d6e3a8b4f3a4a1"
+[[files]]
+path = ".agents/skills/agent-cli-tools/SKILL.md"
+sha256 = "2112e0c08c0ec28c71370b022115bcc7663e087bb06ce01f5e3b283551d7ecd8"
+[[files]]
+path = ".agents/skills/agent-cli-tools/references/catalog-by-task.md"
+sha256 = "3e4c4e6c39c125184d03915f0ac0315649e89396f205d11e2e80c370e6e1de9b"
+[[files]]
+path = ".agents/skills/agent-cli-tools/references/catalog-by-tier.md"
+sha256 = "15220319390a30eb9ae4a72f62f509bae4199726ad24b4baaac5566af6973db2"
+[[files]]
+path = ".agents/skills/agent-cli-tools/references/language-clusters.md"
+sha256 = "fad9501cc885da94e090429caddaabb7b31396cf70f4963036aa3a428df90311"
+[[files]]
+path = ".agents/skills/agent-cli-tools/references/macos-builtins.md"
+sha256 = "76f7113e65d3d348c017dd251a3218cc1725cc36489e25d59af1d66e3b882a4a"
+[[files]]
+path = ".agents/skills/agent-cli-tools/scripts/cli-audit.sh"
+sha256 = "2e6d4fa106dd0b179205bcaad93c0f3bd31aa2c47737d9aedb8d9cbf754a87d1"
+[[files]]
+path = ".agents/skills/agent-cli-tools/agents/openai.yaml"
+sha256 = "81ba9e3eaed1c6db17c37e589b04a0edf9786a03ee2cd292d939fb5afe05beb6"
+[[files]]
+path = ".claude/skills/agent-cli-tools/SKILL.md"
+sha256 = "2112e0c08c0ec28c71370b022115bcc7663e087bb06ce01f5e3b283551d7ecd8"
+[[files]]
+path = ".claude/skills/agent-cli-tools/references/catalog-by-task.md"
+sha256 = "3e4c4e6c39c125184d03915f0ac0315649e89396f205d11e2e80c370e6e1de9b"
+[[files]]
+path = ".claude/skills/agent-cli-tools/references/catalog-by-tier.md"
+sha256 = "15220319390a30eb9ae4a72f62f509bae4199726ad24b4baaac5566af6973db2"
+[[files]]
+path = ".claude/skills/agent-cli-tools/references/language-clusters.md"
+sha256 = "fad9501cc885da94e090429caddaabb7b31396cf70f4963036aa3a428df90311"
+[[files]]
+path = ".claude/skills/agent-cli-tools/references/macos-builtins.md"
+sha256 = "76f7113e65d3d348c017dd251a3218cc1725cc36489e25d59af1d66e3b882a4a"
+[[files]]
+path = ".claude/skills/agent-cli-tools/scripts/cli-audit.sh"
+sha256 = "2e6d4fa106dd0b179205bcaad93c0f3bd31aa2c47737d9aedb8d9cbf754a87d1"
+[[files]]
+path = "scripts/polymath/agent-cli-tools/cli-audit.sh"
+sha256 = "2e6d4fa106dd0b179205bcaad93c0f3bd31aa2c47737d9aedb8d9cbf754a87d1"
+[[files]]
+path = ".agents/skills/remediate-audit/SKILL.md"
+sha256 = "e45871f740e0524e87f8c1fac1ff4b803b805f7d2effb723ada2f27463cd394f"
+[[files]]
+path = ".agents/skills/remediate-audit/assets/remediation-record-template.md"
+sha256 = "82c9155893ea2210ab18daf684db4cd0c51cdb4a5c1872a43a66c191a91b1174"
+[[files]]
+path = ".agents/skills/remediate-audit/references/calibration-record.md"
+sha256 = "98febbd98b12e210856d23bec53dfa0471d79a4ca7ba5362c098ca42a8470fd9"
+[[files]]
+path = ".agents/skills/remediate-audit/agents/openai.yaml"
+sha256 = "57604fadfdbfe50265a74c43f44ee48c5e63c009698e84db5afac3e91a881158"
+[[files]]
+path = ".claude/skills/remediate-audit/SKILL.md"
+sha256 = "e45871f740e0524e87f8c1fac1ff4b803b805f7d2effb723ada2f27463cd394f"
+[[files]]
+path = ".claude/skills/remediate-audit/assets/remediation-record-template.md"
+sha256 = "82c9155893ea2210ab18daf684db4cd0c51cdb4a5c1872a43a66c191a91b1174"
+[[files]]
+path = ".claude/skills/remediate-audit/references/calibration-record.md"
+sha256 = "98febbd98b12e210856d23bec53dfa0471d79a4ca7ba5362c098ca42a8470fd9"
+[[files]]
+path = ".agents/skills/agentic-debugging/SKILL.md"
+sha256 = "ef745a45b1b5a5d3ca88e088fb565cc63d84107ac475a2d889c1fadc290dcdde"
+[[files]]
+path = ".agents/skills/agentic-debugging/assets/evidence-record.schema.json"
+sha256 = "a085b750686fbb2e7114444b5b8c62b475fd2482f426ee64285e5f5ce9dd2a78"
+[[files]]
+path = ".agents/skills/agentic-debugging/assets/hypothesis-ledger-template.md"
+sha256 = "a23550de709cba808975b8761777d8254309a36fb7d15e3484e014f7b65a73cd"
+[[files]]
+path = ".agents/skills/agentic-debugging/assets/probe-snippets.rs"
+sha256 = "10169e0257a5c17ef689e64d3884ef6ba02c342e7c2af911e4756c205259b2e7"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/evidence-artifacts-and-promotion.md"
+sha256 = "5fd63e3f2697d904879353e2c9ffa059ce5e89dc292045f04cfa2403a5f66b66"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/host-integration-notes.md"
+sha256 = "fa6f831f175978318796e146d9ec9cf6ca7fb3a31c961e4a4d3df156c9c40228"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/hypothesis-ledger-and-stopgates.md"
+sha256 = "ac75a5d3644fa83ea9afcf42e37eb00d788248fbac0622a964ef97175dafa2fd"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/instrumentation-menu.md"
+sha256 = "ac8a6cf0b44807f0c08cb590a0653e87767c408846bbe040396e946ab2d3a058"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/reproduction-lanes.md"
+sha256 = "5a4433b5c667ff56e1a3642dc3ed38336574d9c9b51ee59fe6cbe407fde09b34"
+[[files]]
+path = ".agents/skills/agentic-debugging/references/rust-fault-class-playbooks.md"
+sha256 = "e70ddcc44b7a8558e03e7fb78fb7a6bd7506ac72546cf1aa4df076f41bffa173"
+[[files]]
+path = ".agents/skills/agentic-debugging/scripts/README.md"
+sha256 = "6d6abd06f6c71752a431aea30eb444d52a802b01a7cd19cdf92bb23e57c3928f"
+[[files]]
+path = ".agents/skills/agentic-debugging/scripts/evidence_run.sh"
+sha256 = "2f394e46986d9a7e764198ca4f7631b508fe82adc57be8f6cbe70a80a9ea7ba3"
+[[files]]
+path = ".agents/skills/agentic-debugging/scripts/ledger_init.sh"
+sha256 = "07f2d4bbf69d9930bc7e74714aabf0935fad31bf5700dae93b9ad7490852d51b"
+[[files]]
+path = ".agents/skills/agentic-debugging/scripts/probe_cleanup.sh"
+sha256 = "95c28934b826eb321910dbe1b010e2e7ad9e26b3eed1cc45063f2a1156500bc4"
+[[files]]
+path = ".agents/skills/agentic-debugging/agents/openai.yaml"
+sha256 = "005ae0d0ae82ba8e1b6b1970758ae3301add6fb66440c07f651029955465151c"
+[[files]]
+path = ".claude/skills/agentic-debugging/SKILL.md"
+sha256 = "f79f8f76b4d6a2d650ad4fc571c958775458ff30ab11168450edbdab10cff318"
+[[files]]
+path = ".claude/skills/agentic-debugging/assets/evidence-record.schema.json"
+sha256 = "a085b750686fbb2e7114444b5b8c62b475fd2482f426ee64285e5f5ce9dd2a78"
+[[files]]
+path = ".claude/skills/agentic-debugging/assets/hypothesis-ledger-template.md"
+sha256 = "a23550de709cba808975b8761777d8254309a36fb7d15e3484e014f7b65a73cd"
+[[files]]
+path = ".claude/skills/agentic-debugging/assets/probe-snippets.rs"
+sha256 = "10169e0257a5c17ef689e64d3884ef6ba02c342e7c2af911e4756c205259b2e7"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/evidence-artifacts-and-promotion.md"
+sha256 = "5fd63e3f2697d904879353e2c9ffa059ce5e89dc292045f04cfa2403a5f66b66"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/host-integration-notes.md"
+sha256 = "fa6f831f175978318796e146d9ec9cf6ca7fb3a31c961e4a4d3df156c9c40228"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/hypothesis-ledger-and-stopgates.md"
+sha256 = "ac75a5d3644fa83ea9afcf42e37eb00d788248fbac0622a964ef97175dafa2fd"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/instrumentation-menu.md"
+sha256 = "ac8a6cf0b44807f0c08cb590a0653e87767c408846bbe040396e946ab2d3a058"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/reproduction-lanes.md"
+sha256 = "5a4433b5c667ff56e1a3642dc3ed38336574d9c9b51ee59fe6cbe407fde09b34"
+[[files]]
+path = ".claude/skills/agentic-debugging/references/rust-fault-class-playbooks.md"
+sha256 = "e70ddcc44b7a8558e03e7fb78fb7a6bd7506ac72546cf1aa4df076f41bffa173"
+[[files]]
+path = ".claude/skills/agentic-debugging/scripts/README.md"
+sha256 = "6d6abd06f6c71752a431aea30eb444d52a802b01a7cd19cdf92bb23e57c3928f"
+[[files]]
+path = ".claude/skills/agentic-debugging/scripts/evidence_run.sh"
+sha256 = "2f394e46986d9a7e764198ca4f7631b508fe82adc57be8f6cbe70a80a9ea7ba3"
+[[files]]
+path = ".claude/skills/agentic-debugging/scripts/ledger_init.sh"
+sha256 = "07f2d4bbf69d9930bc7e74714aabf0935fad31bf5700dae93b9ad7490852d51b"
+[[files]]
+path = ".claude/skills/agentic-debugging/scripts/probe_cleanup.sh"
+sha256 = "95c28934b826eb321910dbe1b010e2e7ad9e26b3eed1cc45063f2a1156500bc4"
+[[files]]
+path = "scripts/polymath/agentic-debugging/README.md"
+sha256 = "6d6abd06f6c71752a431aea30eb444d52a802b01a7cd19cdf92bb23e57c3928f"
+[[files]]
+path = "scripts/polymath/agentic-debugging/evidence_run.sh"
+sha256 = "2f394e46986d9a7e764198ca4f7631b508fe82adc57be8f6cbe70a80a9ea7ba3"
+[[files]]
+path = "scripts/polymath/agentic-debugging/ledger_init.sh"
+sha256 = "07f2d4bbf69d9930bc7e74714aabf0935fad31bf5700dae93b9ad7490852d51b"
+[[files]]
+path = "scripts/polymath/agentic-debugging/probe_cleanup.sh"
+sha256 = "95c28934b826eb321910dbe1b010e2e7ad9e26b3eed1cc45063f2a1156500bc4"
+[[files]]
+path = ".agents/skills/project-web-search/SKILL.md"
+sha256 = "0502d01d11e96604b7f3d928499c9250221dbf36428cfd53e96cc9d9b8cdd840"
+[[files]]
+path = ".agents/skills/project-web-search/references/brave-search-api.md"
+sha256 = "356e010534df10ff5862c415d964c1e156dc053c1ac418408ae3ce57d02012b4"
+[[files]]
+path = ".agents/skills/project-web-search/references/repo-grounded-search-workflow.md"
+sha256 = "95b4b4e5c0c5298b3575a900e68b7670c24430840eb0d5014ce28ede4bc48cc4"
+[[files]]
+path = ".agents/skills/project-web-search/references/source-quality-and-reporting.md"
+sha256 = "fdcae5fb96b4f87cda2af2775e5b4ba585a940ba4260dfb536541442666cceed"
+[[files]]
+path = ".agents/skills/project-web-search/agents/openai.yaml"
+sha256 = "e654841223712156731eb28df76d9f3b13fcb39f2bce15a3505d3d68cf3e253a"
+[[files]]
+path = ".claude/skills/project-web-search/SKILL.md"
+sha256 = "0502d01d11e96604b7f3d928499c9250221dbf36428cfd53e96cc9d9b8cdd840"
+[[files]]
+path = ".claude/skills/project-web-search/references/brave-search-api.md"
+sha256 = "356e010534df10ff5862c415d964c1e156dc053c1ac418408ae3ce57d02012b4"
+[[files]]
+path = ".claude/skills/project-web-search/references/repo-grounded-search-workflow.md"
+sha256 = "95b4b4e5c0c5298b3575a900e68b7670c24430840eb0d5014ce28ede4bc48cc4"
+[[files]]
+path = ".claude/skills/project-web-search/references/source-quality-and-reporting.md"
+sha256 = "fdcae5fb96b4f87cda2af2775e5b4ba585a940ba4260dfb536541442666cceed"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/SKILL.md"
+sha256 = "ed9f5276f0a357f69a2591f17b7f2b19bbd331116dee614d48256fa0b2cbd0b9"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/archive-retrieval.md"
+sha256 = "58fb92af9b437185816e65f46e0c58faf61f7b86f0b01cbb0f8ff3ca8f5ac4d3"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/display-page-extraction.md"
+sha256 = "47f78da645b7d995d59629510b1cb3421b6a6e13a1f682e0bb446db6dedfb829"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/noncontent-detection.md"
+sha256 = "f204bb16d46fabc8278e18e7dc6e4fac5b24a933109951fecc9b2b3ab2689d1e"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/politeness-and-refusal.md"
+sha256 = "8f72fefc7b5175a460221a4d854a12b05d03826445858e6162fa913f985bf5a2"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/provenance-and-mirrors.md"
+sha256 = "64425b032b8e35a525864f8952ed390af1a74a2011ad92e06e77702bb6d49423"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/references/retrieval-ladder.md"
+sha256 = "70e232bb9c15e0b5b405b6995c18057d02065c91a16690149ac7069357a69f76"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/scripts/classify_content.py"
+sha256 = "18d819b4b274945b0e65e6e850a08700de4b4e3169667d0be393f873a064971f"
+[[files]]
+path = ".agents/skills/retrieve-source-evidence/agents/openai.yaml"
+sha256 = "566653c3ba263bf1308fc9a4b3a46c56f055cee11dc993691bee1d8ccd746fa3"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/SKILL.md"
+sha256 = "ed9f5276f0a357f69a2591f17b7f2b19bbd331116dee614d48256fa0b2cbd0b9"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/archive-retrieval.md"
+sha256 = "58fb92af9b437185816e65f46e0c58faf61f7b86f0b01cbb0f8ff3ca8f5ac4d3"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/display-page-extraction.md"
+sha256 = "47f78da645b7d995d59629510b1cb3421b6a6e13a1f682e0bb446db6dedfb829"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/noncontent-detection.md"
+sha256 = "f204bb16d46fabc8278e18e7dc6e4fac5b24a933109951fecc9b2b3ab2689d1e"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/politeness-and-refusal.md"
+sha256 = "8f72fefc7b5175a460221a4d854a12b05d03826445858e6162fa913f985bf5a2"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/provenance-and-mirrors.md"
+sha256 = "64425b032b8e35a525864f8952ed390af1a74a2011ad92e06e77702bb6d49423"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/references/retrieval-ladder.md"
+sha256 = "70e232bb9c15e0b5b405b6995c18057d02065c91a16690149ac7069357a69f76"
+[[files]]
+path = ".claude/skills/retrieve-source-evidence/scripts/classify_content.py"
+sha256 = "18d819b4b274945b0e65e6e850a08700de4b4e3169667d0be393f873a064971f"
+[[files]]
+path = "scripts/polymath/retrieve-source-evidence/classify_content.py"
+sha256 = "18d819b4b274945b0e65e6e850a08700de4b4e3169667d0be393f873a064971f"
+[[files]]
+path = "scripts/polymath/check-readiness.sh"
+sha256 = "2f675c99f4db232ba5cdf8c29b07a7c97baf5897ff9392969cba6955b5c1d69c"

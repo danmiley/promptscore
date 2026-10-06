@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remediate Audit"
+  short_description: "Consume an independent audit report: re-verify every finding, apply the authorized fixes in dependency order, record per-finding dispositions and a calibration record, and run the gate-reopen checks"
+  default_prompt: "Use remediate-audit to consume the audit report at docs/audits/ (artifact: independent-audit-report): parse the findings register preserving IDs, re-verify every finding via its evidence entrypoint before editing anything, confirm the authorized fix set (fixes vs. accepted residuals with named owners), apply fixes in the report's recommended order testing after each group, trace second-order breakage, write the remediation record with per-finding dispositions and the calibration record to docs/audits/YYYY-MM-DD-<subject>-remediation.md, and run the report's exact gate-reopen checks, reporting outcomes verbatim."

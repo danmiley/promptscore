@@ -1,0 +1,10 @@
+code,class,symbolic_prefix_example,notes
+0,success,,Operation completed; machine output is the result envelope
+2,invocation or validation error,usage.invalid_flag,Bad flags/args; usage problem before any remote call
+3,authentication or authorization,auth.expired_token,Missing/expired/insufficient credentials
+4,requested object not found,resource.not_found,Addressed resource does not exist
+5,conflict or failed precondition,resource.conflict,Version conflict / precondition failed / already exists
+6,remote or transient failure,remote.unavailable,Upstream 5xx / network / retryable transport error
+7,partial success,batch.partial,Some items succeeded and some failed; see warnings/data
+8,operation still pending,operation.pending,Long-running op accepted but not complete; operation id returned
+130,interrupted by user,,SIGINT / Ctrl-C

@@ -1,0 +1,94 @@
+# pyproject.toml baseline for a uv-managed Python CLI or library (python-cli-app).
+# Replace promptscore and promptscore-dev; delete comments you do not need.
+# Verified 2026-09-20: uv 0.11.14, Python 3.12.13, ruff 0.15.22, pyright 1.1.414,
+# pytest 9.1.1, pytest-cov 7.1.0, hypothesis 6.168.0.
+
+[project]
+name = "promptscore"
+version = "0.1.0"
+description = "Offline developer harness for Promptscore"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  # runtime deps with a lower bound; uv.lock pins the exact versions
+]
+
+[project.scripts]
+promptscore-dev = "promptscore.cli:main"
+
+[dependency-groups]
+dev = [
+  "ruff>=0.15",
+  "pytest>=8",
+  "pytest-cov>=6",
+  "hypothesis>=6",
+  "pyright>=1.1",
+  # "pytest-benchmark>=5",   # perf guard lane, add when a hot path exists
+]
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
+
+# ---- lint and type posture: python-style-guide references/lint-posture.md ----
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["src", "tests", "scripts"]
+# Installed agent-skill lanes carry template .py files with <placeholders>;
+# never lint them as project code (same for pyright via `include`).
+extend-exclude = [".agents", ".claude", "scripts/polymath"]
+
+[tool.ruff.lint]
+select = [
+  "E", "W", "F", "I", "N", "UP", "B", "A", "C4", "SIM", "RET", "ARG", "PTH",
+  "PL", "RUF", "S", "BLE", "T20", "ERA", "TRY", "EM", "ISC", "PIE", "PGH",
+  "ASYNC", "TD", "FIX", "D",
+]
+ignore = [
+  "D100", "D104", "D105", "D107", "D203", "D213",
+  "PLR0913",
+  "TRY003", "EM101", "EM102",
+  "TD003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "D", "PLR2004", "ARG", "T20"]  # asserts are the test idiom; docstrings, magic numbers, fixture args, prints are noise in tests
+"scripts/**" = ["T20"]  # scripts talk to a terminal; print is their output
+
+[tool.ruff.lint.pylint]
+max-branches = 12
+max-statements = 50
+max-returns = 6
+max-nested-blocks = 3  # PLR1702 is preview-only (ruff 0.15); inert until stable, see FLOW-4
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pyright]
+include = ["src", "tests", "scripts/score_prompt.py"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
+
+# ---- test posture: python-test-harness ----
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider --strict-markers"
+xfail_strict = true
+filterwarnings = ["error"]
+markers = [
+  "contract: black-box CLI contract tests (spawn the installed entry point)",
+  "golden: byte-for-byte golden comparisons",
+  "bench: perf guard cases (skipped unless --benchmark-only)",
+]
+
+[tool.coverage.run]
+source = ["promptscore"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true

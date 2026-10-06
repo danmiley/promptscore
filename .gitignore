@@ -1,0 +1,45 @@
+# Build output and generated reports
+target/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# Browser and frontend caches
+node_modules/
+.next/
+.nuxt/
+.svelte-kit/
+.parcel-cache/
+.vite/
+
+# Python and local tooling envs
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Local env, logs, temp, and OS/editor noise
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Keep repo-owned agent/install surfaces trackable when present.
+# Do not add blanket ignores for `.agents/` or `.claude/skills/`.
+
+# Generated prompt grades (re-run scripts/score_prompt.py)
+/reports/*
+!/reports/README.md
+
+# Python development artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ruff_cache/
+.coverage
+coverage.json

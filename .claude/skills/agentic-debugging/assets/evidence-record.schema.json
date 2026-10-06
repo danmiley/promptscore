@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agentic-debugging-probe-record-v1",
+  "title": "Agentic-debugging probe record (one JSONL line per probe event)",
+  "description": "Sibling of the rust-test-harness runtime-probe events contract: line-oriented JSONL that pattern-based gate tooling can ingest (fail/warn regex over lines), with hypothesis-scoped fields for evidence-driven debugging.",
+  "type": "object",
+  "required": ["ts", "session", "hyp", "probe", "loc", "event"],
+  "properties": {
+    "ts": {
+      "description": "Timestamp: RFC3339 string or monotonic milliseconds; be consistent within a session.",
+      "type": ["string", "number"]
+    },
+    "session": { "type": "string", "description": "Debug session id, matching the ledger and code markers." },
+    "hyp": { "type": "string", "pattern": "^H[0-9]+$", "description": "Hypothesis tag this record discriminates." },
+    "probe": { "type": "string", "description": "Probe id matching the POLYDBG code marker (p1, p2, ...)." },
+    "loc": { "type": "string", "description": "Probe site as file:line." },
+    "event": { "type": "string", "description": "Short machine-matchable event name." },
+    "data": { "type": "object", "description": "Observation payload; hash/checksum large state instead of embedding it." },
+    "level": { "enum": ["info", "warn", "fail"], "description": "Optional severity for harness-style warn/fail pattern gates." }
+  },
+  "examples": [
+    { "ts": "2026-07-06T18:20:03Z", "session": "dbg-20260706-a3", "hyp": "H2", "probe": "p2", "loc": "cache.rs:141", "event": "evict", "data": { "gen": 7, "key": "k41" } },
+    { "ts": 182034, "session": "dbg-20260706-a3", "hyp": "H1", "probe": "p1", "loc": "sim.rs:88", "event": "tick-checksum", "data": { "tick": 512, "crc": "9f31c2aa" }, "level": "info" }
+  ]
+}

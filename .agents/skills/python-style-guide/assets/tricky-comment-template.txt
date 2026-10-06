@@ -1,0 +1,21 @@
+# TRICKY: <one sentence: what is unusual here>
+#
+# WHY NOT THE PLAIN VERSION:
+#   <what the boring version was, and the concrete reason it was rejected:
+#    measured cost with command and host / framework hook / library-only
+#    path>
+#
+# HOW TO READ IT:
+#   <2 to 6 lines walking a reader through the construct in order; name the
+#    types, the dynamic attributes, or the array shapes they will see and
+#    what each is>
+#
+# INVARIANTS:
+#   <what must stay true for this to remain correct; who maintains it>
+#
+# HOW TO VERIFY:
+#   <the test or property that fails if this breaks; the oracle twin>
+#
+# REMOVE WHEN:
+#   <the condition under which the plain version becomes acceptable, or
+#    "no known path">

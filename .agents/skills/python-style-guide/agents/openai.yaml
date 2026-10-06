@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Style Guide"
+  short_description: "Human-readable canonical Python: boring dialect by default, tricky-code gate, perf-guarded cleanup of dense agent code"
+  default_prompt: "Use python-style-guide to write or normalize Python for human readability. Classify the task as authoring, review/normalize, or read-only audit, open that lane, apply the core rules, pass any gated construct (metaclass, signature-changing decorator, registry magic, eval/exec, dense comprehension or numpy trick) through the tricky-code gate, measure before and after when rewriting hot paths, and run the self-review plus ruff format --check, ruff check, and pyright before finishing."

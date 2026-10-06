@@ -1,0 +1,4 @@
+interface:
+  display_name: "Superprompt"
+  short_description: "Vet and execute a prompt with rigorous intent, verification, uncertainty, self-attack, completeness, and delivery discipline"
+  default_prompt: "Use $superprompt on this request: extract the intended outcome and completion evidence, check premises, risk-rank and execute the work, independently verify critical claims, label decision-relevant uncertainty, self-attack the result, cover every request clause, and run the final gate before delivering the answer."

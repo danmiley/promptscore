@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/cli-command-manifest-v1.json",
+  "title": "CLI Capability Manifest",
+  "description": "Machine-readable description of a CLI's command tree, emitted by `tool help --output json`. Lets an agent inspect capabilities without scraping prose. Generate it from the authoritative command model and diff it in CI.",
+  "type": "object",
+  "required": ["schema_version", "tool", "version", "commands"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "tool": { "type": "string", "description": "Binary/program name." },
+    "version": { "type": "string", "description": "Package SemVer of the CLI emitting this manifest." },
+    "output_formats": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["text", "json", "jsonl"] },
+      "description": "Output formats supported tool-wide."
+    },
+    "global_flags": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/flag" }
+    },
+    "commands": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/command" }
+    }
+  },
+  "$defs": {
+    "command": {
+      "type": "object",
+      "required": ["path", "summary", "side_effect"],
+      "properties": {
+        "path": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Command path from root, e.g. [\"asset\", \"get\"]."
+        },
+        "summary": { "type": "string" },
+        "side_effect": {
+          "type": "string",
+          "enum": ["read-only", "mutating", "destructive"],
+          "description": "Classification used by agents to gate confirmation and dry-run."
+        },
+        "supports_dry_run": { "type": "boolean" },
+        "interactive": {
+          "type": "boolean",
+          "description": "True if the command can prompt; a non-interactive path must exist."
+        },
+        "output_formats": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["text", "json", "jsonl"] }
+        },
+        "schema_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Identifiers of the result/event schemas this command can emit."
+        },
+        "exit_codes": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "description": "Exit codes this command can return, from the shared taxonomy."
+        },
+        "flags": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/flag" }
+        },
+        "args": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/arg" }
+        }
+      }
+    },
+    "flag": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string", "description": "Long flag name without leading dashes." },
+        "short": { "type": "string" },
+        "type": { "type": "string", "enum": ["bool", "string", "int", "duration", "enum", "path", "list"] },
+        "metavar": { "type": "string" },
+        "default": {},
+        "required": { "type": "boolean" },
+        "env": { "type": "string", "description": "Environment variable that supplies this value, if any." },
+        "choices": { "type": "array", "items": { "type": "string" } },
+        "conflicts_with": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" }
+      }
+    },
+    "arg": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string", "enum": ["string", "int", "path", "list"] },
+        "required": { "type": "boolean" },
+        "variadic": { "type": "boolean" },
+        "description": { "type": "string" }
+      }
+    }
+  }
+}

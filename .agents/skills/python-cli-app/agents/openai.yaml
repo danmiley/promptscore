@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python CLI App"
+  short_description: "uv-managed Python project bootstrap and CLI contracts: pyproject, src layout, ruff/pyright/pytest baseline, --json envelope, exit-code map, contract tests"
+  default_prompt: "Use python-cli-app to bootstrap a Python repo with uv, a pinned interpreter, a committed uv.lock, src/ layout, and a green ruff/pyright/pytest baseline, then design or harden its CLI: thin argparse entry point, stdout data vs stderr diagnostics, --json envelope with a schema field, stable exit-code map, config/env precedence, read-only doctor, and contract tests. Route style rules to python-style-guide, test lanes and goldens to python-test-harness, and packaging to cli-package-design or homebrew-tap-setup."

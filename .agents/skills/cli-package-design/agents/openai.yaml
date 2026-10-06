@@ -1,0 +1,4 @@
+interface:
+  display_name: "CLI Package Design"
+  short_description: "Language-neutral design and packaging contract for a CLI that fronts REST APIs for humans and agents"
+  default_prompt: "Use cli-package-design to design a command-line tool over a focused set of REST APIs as one semantic interface with two renderers (human + agent): command taxonomy mirroring the API resource graph, JSON/JSONL output envelopes, exit-code classes, a machine-readable capability manifest, config/auth precedence, non-interactive/dry-run/mutation safety, packaging and distribution lanes, docs generated from the command model with a product site, and multi-surface versioning. Route Rust implementation to rust-cli-app, Homebrew/release mechanics to rust-homebrew-distribution, product/manual build surfaces to rust-cli-product-surface and product-site-pages, and CLI tool selection to agent-cli-tools."

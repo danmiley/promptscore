@@ -1,0 +1,3 @@
+name: agent-cli-tools
+description: Weapons-master for CLI tool selection — map a task to the best command-line tool for agents and humans, tiered by utility and clustered by Rust/Python/Ruby, with an audit-and-install script.
+path: SKILL.md

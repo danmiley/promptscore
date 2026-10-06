@@ -1,0 +1,70 @@
+# Ruff and pyright baseline from python-style-guide references/lint-posture.md.
+# New project with no code yet: paste into pyproject.toml. Existing codebase:
+# do not paste; probe and adopt per references/lint-posture.md TOOL-2a
+# (select only what is already clean, record the rest).
+# Verified 2026-09-20 on ruff 0.15.22, pyright 1.1.414, Python 3.12.13.
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["src", "tests"]
+# Installed agent-skill lanes carry template .py files with <placeholders>;
+# never lint them as project code (same for pyright via `include`).
+extend-exclude = [".agents", ".claude", "scripts/polymath"]
+
+[tool.ruff.lint]
+select = [
+  "E", "W", "F",      # pycodestyle, pyflakes
+  "I",                # isort
+  "N",                # pep8-naming
+  "UP",               # pyupgrade: modern syntax for the pinned version
+  "B",                # bugbear: mutable defaults, raise-from, etc.
+  "A",                # builtins shadowing
+  "C4",               # comprehension shape
+  "SIM",              # simplify
+  "RET",              # return discipline
+  "ARG",              # unused arguments
+  "PTH",              # pathlib over os.path
+  "PL",               # pylint: complexity thresholds, magic numbers
+  "RUF",              # ruff-specific
+  "S",                # bandit: subprocess, eval, pickle, secrets
+  "BLE",              # blind except
+  "T20",              # print left in library code
+  "ERA",              # commented-out code
+  "TRY",              # exception style
+  "EM",               # exception message style
+  "ISC",              # implicit string concatenation
+  "PIE",              # misc
+  "PGH",              # blanket noqa / type: ignore
+  "ASYNC",            # blocking calls in coroutines
+  "TD", "FIX",        # TODO hygiene
+  "D",                # docstrings
+]
+ignore = [
+  "D100", "D104",     # module / package docstrings: MOD-1 wants them on public modules; not every file
+  "D105", "D107",     # magic methods, __init__
+  "D203", "D213",     # incompatible pairs with D211/D212 (google style)
+  "PLR0913",          # argument count: FLOW-6 handles it in review, not as a hard rule
+  "TRY003",           # long messages in the raise call are fine (ERR-2 wants the value in the message)
+  "EM101", "EM102",   # string literal / f-string in exception: same reason
+  "TD003",            # issue link on every TODO: DOC-4 wants owner + condition, link optional
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "D", "PLR2004", "ARG", "T20"]  # asserts are the test idiom; docstrings, magic numbers, fixture args, prints are noise in tests
+"scripts/**" = ["T20"]  # scripts talk to a terminal; print is their output
+
+[tool.ruff.lint.pylint]
+max-branches = 12
+max-statements = 50
+max-returns = 6
+max-nested-blocks = 3  # PLR1702 is preview-only (ruff 0.15); inert until stable, see FLOW-4
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pyright]
+include = ["src", "tests"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic Debugging"
+  short_description: "Stop-gated, evidence-driven debugging: hypotheses, tagged probes, runtime evidence, minimal fix, mechanical cleanup"
+  default_prompt: "Use agentic-debugging to debug this fault with the stop-gated verify-before-fix loop: frame the symptom, establish a reproduction lane, write a hypothesis ledger, install POLYDBG-marked hypothesis-tagged probes writing JSONL evidence to an ignored path, confirm exactly one hypothesis from filtered evidence, apply a minimal fix, verify in the same lane, then run probe cleanup and show the zero-residue check passing."

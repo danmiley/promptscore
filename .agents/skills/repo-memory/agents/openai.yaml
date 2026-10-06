@@ -1,0 +1,3 @@
+name: repo-memory
+description: Durable repo-scoped AI memory shared across models and IDEs — one lesson per file under docs/ai-memory/ with an always-read index, wired through AGENTS.md; setup, recall/record rules, history bootstrap, consolidation, and a deterministic audit script.
+path: SKILL.md

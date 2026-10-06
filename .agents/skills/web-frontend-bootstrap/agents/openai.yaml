@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Frontend Bootstrap"
+  short_description: "Frontend-first bootstrap for new repos where framework/runtime is not decided"
+  default_prompt: "Use web-frontend-bootstrap to bootstrap this web/frontend repo: detect existing signals, choose a framework path with explicit tradeoffs, set the lint/format/smoke-test quality baseline, and record decisions in a dated decision log."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Test Harness"
+  short_description: "pytest lane matrix, hermetic no-network fixtures, approved text goldens, staged coverage gates, machine-readable gate outputs"
+  default_prompt: "Use python-test-harness to define or upgrade a Python project's QA harness: install the hermetic conftest and its control test, mark tests into unit/contract/golden/bench lanes, gate goldens with recorded approvals, set staged advisory-to-enforced coverage thresholds, and run check_quality.sh then run_qa_matrix.sh so every gate writes JSON under dist/reports even when it fails."

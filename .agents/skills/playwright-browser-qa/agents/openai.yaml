@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Playwright QA"
+  short_description: "Rust-oriented Playwright browser QA strategy, authoring, and CI scaling guidance"
+  default_prompt: "Use playwright-browser-qa when a Rust project needs Playwright browser testing strategy: establish config/webServer baselines, write resilient locator-first specs, debug flaky tests with traces, apply auth fixtures and targeted mocking, and scale CI with retries/sharding. Keep QA matrix/gate ownership in rust-test-harness."

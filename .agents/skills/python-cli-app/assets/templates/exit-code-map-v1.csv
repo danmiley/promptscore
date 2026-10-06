@@ -1,0 +1,10 @@
+exit_code,class,meaning,symbolic_prefix_example,notes
+0,success,Operation completed successfully,,Machine output is the result envelope
+2,invocation_or_validation,Invalid CLI arguments / usage / input validation,usage.invalid_flag,Bad flags/args caught before any remote call
+3,auth_or_authz,Authentication required/invalid or authorization denied,auth.expired_token,Folds the former separate auth + permission codes
+4,not_found,Requested resource was not found,resource.not_found,
+5,conflict_or_precondition,State conflict or failed precondition,resource.conflict,Version conflict / already exists / precondition failed
+6,remote_or_transient,Upstream service or transport failure,remote.unavailable,Upstream 5xx / network / retryable transport error (folds I/O)
+7,partial_success,Some items succeeded and some failed,batch.partial,See warnings/data for per-item detail
+8,operation_pending,Long-running op accepted but not complete,operation.pending,Operation id returned for later polling
+130,interrupted,Interrupted by user,,SIGINT / Ctrl-C
