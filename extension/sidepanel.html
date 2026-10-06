@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptScore Side Panel</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body class="theme-dark">
+  <div class="sidepanel-container">
+    
+    <!-- Side Panel Header -->
+    <header class="panel-header">
+      <div class="panel-brand">
+        <div class="ps-icon-gem">✦</div>
+        <div>
+          <div class="panel-heading">PromptScore</div>
+          <div class="panel-subheading">Structural Assessment Engine</div>
+        </div>
+      </div>
+      <div class="panel-status-pill" id="sync-status-pill">
+        <span class="status-dot"></span>
+        <span class="status-label" id="sync-status-label">Auto-Detect</span>
+      </div>
+    </header>
+
+    <!-- Source Prompt Live Bar (What is being evaluated) -->
+    <div class="prompt-source-bar">
+      <div class="source-info">
+        <span class="source-label">Current Prompt:</span>
+        <span class="source-words" id="word-count-label">0 words</span>
+      </div>
+      <button class="source-refresh-btn" id="btn-refresh-prompt" title="Re-read prompt from chat page">
+        ↻ Refresh
+      </button>
+    </div>
+
+    <!-- Active Prompt Preview (Editable if manual) -->
+    <div class="prompt-preview-drawer">
+      <textarea id="active-prompt-text" class="preview-textarea" rows="2" placeholder="Highlight text on the page, type in the chat box, or enter a prompt here..."></textarea>
+    </div>
+
+    <!-- 3 Artifact Tab Navigation -->
+    <nav class="artifact-tabs" role="tablist">
+      <button class="artifact-tab active" id="tab-btn-score" data-tab="score" role="tab" aria-selected="true">
+        <span class="tab-badge-num">1</span>
+        <span class="tab-label">Credit Score</span>
+      </button>
+      <button class="artifact-tab" id="tab-btn-markup" data-tab="markup" role="tab" aria-selected="false">
+        <span class="tab-badge-num">2</span>
+        <span class="tab-label">Markup</span>
+      </button>
+      <button class="artifact-tab" id="tab-btn-golden" data-tab="golden" role="tab" aria-selected="false">
+        <span class="tab-badge-num">3</span>
+        <span class="tab-label">Golden Prompt</span>
+      </button>
+    </nav>
+
+    <!-- Panel Scroll Body -->
+    <div class="panel-content-scroll" id="panel-content-scroll">
+      
+      <!-- ======================================================== -->
+      <!-- ARTIFACT 1: SCORE & DIAGNOSTICS VIEW                     -->
+      <!-- ======================================================== -->
+      <section class="artifact-pane active" id="pane-score" role="tabpanel">
+        <!-- Big Bold Credit Score Dial Card -->
+        <div class="score-hero-card" id="score-hero-card">
+          <div class="gauge-container">
+            <svg class="score-gauge" viewBox="0 0 200 125">
+              <path class="gauge-track" d="M 25 105 A 75 75 0 0 1 175 105" />
+              <path class="gauge-fill" id="gauge-fill-path" d="M 25 105 A 75 75 0 0 1 175 105" />
+            </svg>
+            <div class="gauge-center-content">
+              <div class="score-number" id="display-score-value">300</div>
+              <div class="score-scale-range">Range: 300 – 850</div>
+            </div>
+          </div>
+
+          <div class="band-badge-wrapper">
+            <div class="band-badge band-developing" id="display-band-badge">
+              <span class="band-dot"></span>
+              <span id="display-band-title">Developing</span>
+              <span class="band-range" id="display-band-range">(300–499)</span>
+            </div>
+          </div>
+
+          <p class="band-summary-text" id="display-band-summary">
+            Text does not yet state what must be true when work is finished.
+          </p>
+
+          <div class="score-scale-bar-legend">
+            <div class="scale-segment seg-dev current" title="Developing: 300–499">Developing</div>
+            <div class="scale-segment seg-usable" title="Usable: 500–649">Usable</div>
+            <div class="scale-segment seg-strong" title="Strong: 650–749">Strong</div>
+            <div class="scale-segment seg-disc" title="Disciplined: 750–850">Disciplined</div>
+          </div>
+        </div>
+
+        <!-- Section: Why you got this score -->
+        <div class="card-section">
+          <div class="section-title-row">
+            <span class="section-icon">🔍</span>
+            <h3 class="section-title">Why this score</h3>
+          </div>
+          <ul class="why-list" id="display-why-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Section: How to raise it -->
+        <div class="card-section">
+          <div class="section-title-row">
+            <span class="section-icon">🚀</span>
+            <h3 class="section-title">How to raise it</h3>
+          </div>
+          <div class="tips-list" id="display-tips-list">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Full 8-Dimension Rubric Accordion -->
+        <details class="rubric-details-accordion" id="rubric-accordion">
+          <summary class="accordion-summary">
+            <span>View Full Structural Rubric (8 Dimensions)</span>
+            <span class="accordion-arrow">▾</span>
+          </summary>
+          <div class="table-responsive">
+            <table class="rubric-table" id="rubric-table">
+              <thead>
+                <tr>
+                  <th>Characteristic</th>
+                  <th>Weight</th>
+                  <th>Fulfillment</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="rubric-table-body">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- ARTIFACT 2: DETAILED MARKUP / ANNOTATION VIEW            -->
+      <!-- ======================================================== -->
+      <section class="artifact-pane" id="pane-markup" role="tabpanel">
+        <div class="markup-lead-card">
+          <div class="markup-lead-header">
+            <span class="markup-badge">Interactive Annotation</span>
+            <span class="markup-sub">Smallest structural edits</span>
+          </div>
+          <p class="markup-lead-text">
+            Green blocks carry credit; amber blocks flag gaps or missing finish lines.
+          </p>
+        </div>
+
+        <!-- Annotated Segments Container -->
+        <div class="segments-container" id="segments-container">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="markup-actions-bar">
+          <button class="secondary-btn" id="btn-switch-to-golden">
+            View Recommended Golden Prompt →
+          </button>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- ARTIFACT 3: CANONICAL GOLDEN PROMPT VIEW                 -->
+      <!-- ======================================================== -->
+      <section class="artifact-pane" id="pane-golden" role="tabpanel">
+        <div class="golden-header-card">
+          <div class="golden-crown-tag">
+            <span>👑 Best Practice Architecture</span>
+            <span class="golden-score-pill">Target: 816+</span>
+          </div>
+          <p class="golden-desc">
+            Retains your core intent while appending non-prescriptive finish lines and verifiable checks.
+          </p>
+        </div>
+
+        <!-- Golden Code Box with Copy -->
+        <div class="golden-prompt-box">
+          <div class="prompt-box-topbar">
+            <div class="format-badge">Markdown / Plaintext</div>
+            <div class="topbar-actions">
+              <button class="copy-btn" id="btn-copy-golden">
+                <span class="copy-icon">📋</span>
+                <span class="copy-btn-text">Copy Golden</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Preformatted Golden Prompt Text -->
+          <pre class="golden-pre" id="golden-prompt-pre"><code><!-- Populated by JS --></code></pre>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="golden-action-footer">
+          <button class="primary-action-btn" id="btn-apply-golden-to-chat">
+            <span class="btn-icon">⚡</span>
+            <span>Insert into Chat Composer</span>
+          </button>
+          <p class="action-note">Directly replaces your draft prompt in Claude / ChatGPT.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Panel Footer Status -->
+    <footer class="panel-footer">
+      <div class="footer-status-dot"></div>
+      <span class="footer-status-text">PromptScore Engine • Offline MV3 Sandboxed Origin</span>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="ps-toast" id="ps-toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="engine/rubric_data.js"></script>
+  <script src="engine/grader.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

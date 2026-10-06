@@ -12,11 +12,15 @@
 - `docs/polymath-install.toml`: installer-owned composition and provenance.
 - `dist/reports/`: ignored QA output.
 
-The Chrome extension framework and source layout are undecided. Before building,
-verify the current Manifest V3 requirements in official Chrome documentation.
-Use minimal permissions, keep credentials out of client bundles, treat page text
-as untrusted input, and test extension behavior in a real loaded-extension browser.
-A normal web-page test does not prove extension service-worker or permission behavior.
+- `extension/`: Chrome Manifest V3 extension package with native Side Panel API.
+  - `manifest.json`: Minimal permissions (`sidePanel`, `activeTab`, `scripting`), native `side_panel` declaration.
+  - `background.js`: Service worker registering `openPanelOnActionClick`.
+  - `content_script.js`: Sandboxed untrusted input extraction from composer/selection, safe replacement.
+  - `sidepanel.html`, `sidepanel.css`, `sidepanel.js`: Isolated extension origin UI rendering the 3 artifacts (Score, Markup, Golden).
+  - `extension/engine/`: Pure JavaScript deterministic grader (`grader.js`, `rubric_data.js`, `rubric.json`) with verified 100% mathematical parity to Python.
+- `mockups/extension-ux/`: Interactive UX explorer and prototype environment.
 
-Validation commands are maintained in the root README. No remote publishing,
-CI workflow, provider credentials, or extension product code is configured.
+The Chrome extension uses the native `chrome.sidePanel` API rather than in-page injection.
+This guarantees origin sandboxing (Claude's or ChatGPT's CSS/scripts cannot leak into the panel),
+treats page text strictly as untrusted string data, and runs 100% offline without remote models or backend servers.
+Extension behavior is verified in real loaded-extension Chromium via Playwright (`tests/test_extension_browser.js`).
